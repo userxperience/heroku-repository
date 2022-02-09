@@ -24,7 +24,7 @@
 <header>
     <img src="/img/pasfotogrijs.png" alt="my photo" id="pasfoto">
     <a href="https://hz.nl/en"><img src="/img/hzlogo.png" alt="hz logo" id="hzlogo"></a>
-    <a href="programmes/foodgenerator"><img src="/img/voercode.png" alt="javascript code" id="voercode"></a>
+    <a href="/mealGenerator"><img src="/img/voercode.png" alt="javascript code" id="voercode"></a>
     <img src="/img/weercode.png" alt="javascript code" id="weercode">
 </header>
 
