@@ -28,7 +28,8 @@
     <p>
         My name is Tijn Visser and i'm a first year ICT student at the HZ.<br>
         I am from Terneuzen, on the other side. i'm seventeen and I graduated from HAVO last year.<br>
-        In terms of hobbies, i'm learning piano, I like to play video games and I like to hang out with friends. i've also
+        In terms of hobbies, i'm learning piano, I like to play video games and I like to hang out with friends. i've
+        also
         begun to take an interest in coding since I have started this course.<br>
         My favorite genres of games are strategy games like RTS's or tactical shooters. <br>
         I also work at the local cinema in Terneuzen, it's a comfortable working environment and it's also nice ensuring

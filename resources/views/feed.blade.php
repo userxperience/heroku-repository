@@ -39,21 +39,24 @@
         <h2>SWOT-analysis</h2>
         <p>I've created a SWOT-analysis about myself, click <a href="blogposts\blogpost-swot.html">here</a> to view it.
         </p>
-    </div><br>
+    </div>
+    <br>
 
     <div class="blogpost">
         <p1>09/09/2021 14:34</p1>
         <h2>Programming experience</h2>
         <p>I didn't dive into this course cluelessly, a brief explanation about my past programming endeavours can be
             found <a href="blogposts\blogpost-experience.html">here</a></p>
-    </div><br>
+    </div>
+    <br>
 
     <div class="blogpost">
         <p1>09/09/2021 14:44</p1>
         <h2>My feedback</h2>
         <p>To read about the feedback i've received about my SKC assignment, visit <a
                 href="blogposts\blogpost-feedback.html">here</a>.</p>
-    </div><br>
+    </div>
+    <br>
 
     <div class="blogpost">
         <p1>09/09/2021 14:49</p1>
@@ -61,7 +64,6 @@
         <p>There is a lot of potential work in the ICT field, more information about this can be found <a
                 href="blogposts\blogpost-workfield.html">here</a>.</p>
     </div>
-
 
 
 </main>

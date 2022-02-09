@@ -6,6 +6,7 @@ use App\Http\Controllers\FeedController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProgramController;
 
 
 /*
@@ -43,3 +44,5 @@ route::get('/FAQ', [FAQController::class, 'show']);
 route::get('/feed', [FeedController::class, 'show']);
 
 route::get('/dashboard', [DashboardController::class, 'show']);
+
+route::get('/program', [ProgramController::class, 'show']);

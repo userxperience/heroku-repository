@@ -26,7 +26,8 @@
     <p>
     <hr>
     <p>
-    <div class="FAQquestion">Q: How can you print a document from your laptop at hz?</div> <br>
+    <div class="FAQquestion">Q: How can you print a document from your laptop at hz?</div>
+    <br>
     <li>Go to the website <a href="http://print.hz.nl">http://print.hz.nl</a></li>
     <li>Type in your HZ username and password and click on Login</li>
     <li>Click on Choose File and select the file you want to print.
@@ -39,15 +40,20 @@
     <li>Once the print job has been requested you must register using your HZ pass on the TouchID next to the
         multifunctional printer. Next, select printer option Print / Afdrukken.<br>&nbsp;&nbsp;&nbsp;&nbsp; In the menu,
         select the multifunctional printer to where the job has been sent.
-        Next, you can see which printer job i ready to be printed.<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The print job is the
-        completed provided there is sufficient credit on your printing account. When the printing is completed, press Stop
-        on the TouchID, followed by Logout.</li>
+        Next, you can see which printer job i ready to be printed.<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The print job is
+        the
+        completed provided there is sufficient credit on your printing account. When the printing is completed, press
+        Stop
+        on the TouchID, followed by Logout.
+    </li>
     </p>
     <br>
     <p>
-    <div class="FAQquestion">Q:How can you scan a document and send it to your laptop at hz?</div><br>
+    <div class="FAQquestion">Q:How can you scan a document and send it to your laptop at hz?</div>
+    <br>
     <li>Ensure you have at least €0.07 credit. Although scanning is free, you must have
-        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this amount of credit on your HZ pass.</li>
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this amount of credit on your HZ pass.
+    </li>
     <li>Register using your HZ pass on the TouchID next to the multifunctional printer.</li>
     <li>In the TouchID menu, select option Scanning - Scan.</li>
     <li> Lay the original sheet on the feeder or glass plate.</li>
@@ -64,13 +70,15 @@
     </p>
     <br>
     <p>
-    <div class="FAQquestion">Q: What do you need to do when are sick / show symptoms of corona virus?</div><br>
+    <div class="FAQquestion">Q: What do you need to do when are sick / show symptoms of corona virus?</div>
+    <br>
     A: Stay at home, and contact a teacher you will not be coming that day. If you have symptoms relating to the
     coronavirus, get tested.
     <br>It's possible to follow the lesson from home via Microsoft Teams.</p>
     <br>
     <p>
-    <div class="FAQquestion">Q: How can you book a project room in one of the wings?</div><br>
+    <div class="FAQquestion">Q: How can you book a project room in one of the wings?</div>
+    <br>
     A: Head to the selfservice section of <a href="https://portal.hz.nl/">https://portal.hz.nl/</a>, click "book a
     project room" and follow the given instructions.</p>
     <br>

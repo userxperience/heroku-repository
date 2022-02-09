@@ -11,8 +11,6 @@
 </head>
 
 
-
-
 <body id=body>
 <navbar id="navbar">
     <a class="navbarbutton" href="/">Home</a>
@@ -39,7 +37,8 @@
         <tr>
             <td rowspan="3">1</td>
             <td>Programme and Career
-                Orientation</td>
+                Orientation
+            </td>
             <td>2,5</td>
             <td>Assessment</td>
             <td></td>
