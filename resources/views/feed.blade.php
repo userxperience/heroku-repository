@@ -31,7 +31,7 @@
         <p1>09/09/2021 14:12</p1>
         <h2>My study choice</h2>
         <p>There is of course a reason why I went for HBO-ICT out of all available options, read more about my choice <a
-                href="blogposts\blogpost-studychoice.html">here</a>.</p>
+                href="/posts/mystudychoice">here</a>.</p>
     </div>
     <div class="blogpost"><br>
 
@@ -46,7 +46,7 @@
         <p1>09/09/2021 14:34</p1>
         <h2>Programming experience</h2>
         <p>I didn't dive into this course cluelessly, a brief explanation about my past programming endeavours can be
-            found <a href="blogposts\blogpost-experience.html">here</a></p>
+            found <a href="">here</a></p>
     </div>
     <br>
 

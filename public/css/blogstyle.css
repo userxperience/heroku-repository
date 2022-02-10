@@ -1,0 +1,158 @@
+body {
+    font-family: Arial;
+    margin: 0px;
+    background-color:#e0e4e4;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+main {
+    margin-left: 10px;
+    margin-right:200px;
+}
+
+/*navbar below*/
+#navbar {
+    background-color: purple;
+    display: block;
+    bottom: 0;
+    right: 10;
+    left:10;
+    padding-top:16px;
+    width: 100%;
+    height: 30px;
+    position:static;
+    top: 0;
+}
+
+/*change padding-top to 30 and position to fixed for a fixed navbar*/
+main{margin:10px;
+    padding-top: 0px;
+}
+
+/*navbar below*/
+.navbarbutton {
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    margin-left: 5px;
+    background-color: #D4E7E7;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+#name {
+    margin-left:700px;
+    color: rgb(240, 240, 240);
+    padding: 5px;
+    background-color: #468484;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+#navbar a:hover{
+    background-color: #468484;
+    color:white;
+}
+
+#currentpage{
+    background-color:#468484 !important;
+    color:white;
+}
+
+
+.navbarbutton a:hover{
+    background-color: rgb(173, 173, 173);
+    text-decoration: underline;
+}
+
+#currentpage{
+    background-color:rgb(173, 173, 173) !important;
+    text-decoration: underline !important;
+}
+
+/*footer below*/
+footer{
+    bottom:0px;
+    background-color:#468484;
+    bottom: 0px;
+    right: 0px;
+    left:0px;
+    width: 100%;
+    height: 70px;
+}
+
+#contactinfo{
+    color: white;
+    padding-top: 1px ;
+    margin-bottom: 5px;
+}
+
+#allcontactinfo{
+    padding-left: 10px;
+}
+
+#tweedecontactinfo {
+    text-align: left;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-gap: 10px;
+    padding: 0px;
+}
+
+.grid-container > div {
+    text-align: left;
+    padding: 5px 0;}
+
+#footerlink:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+#footerlink:visited{
+    color: rgb(207, 207, 207);
+}
+
+#footerlink{
+    text-decoration: none;
+    color: white;
+}
+
+.poster{
+    float:right;
+    width:200px;
+    position: static;
+    top: 100px;
+    left: 200px;
+}
+
+.poster:hover     {
+    transform: scale(2);
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    z-index: 3;
+    padding-right:60px
+}
+
+#worktext{
+    padding-right: 250px;
+}
+
+.timestamp{
+    float:right;
+}
+
+#namebar{
+    text-align: center;
+    padding: 30px;
+
+}
+
+iframe{
+    width: 100%;
+    height: 500px;
+}

@@ -7,6 +7,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\mealGeneratorController;
+use App\Http\Controllers\PostsController;
 
 
 /*
@@ -20,18 +21,18 @@ use App\Http\Controllers\mealGeneratorController;
 |
 */
 //
-//Route::get('/posts/{post}', function ($post) {
+//Route::get('/posts/{posts}', function ($posts) {
 //    $posts = [
-//        'my-first-post' => 'Hello, this is my first blog post!',
-//        'my-second-post' => 'Now I am getting the hang of this blogging thing.'
+//        'my-first-posts' => 'Hello, this is my first blog posts!',
+//        'my-second-posts' => 'Now I am getting the hang of this blogging thing.'
 //    ];
 //
-//    if (!array_key_exists($post, $posts)) {
-//        abort(404, 'Sorry, that post was not found.');
+//    if (!array_key_exists($posts, $posts)) {
+//        abort(404, 'Sorry, that posts was not found.');
 //    }
 //
-//    return view('post', [
-//        'post' => $posts[$post]
+//    return view('posts', [
+//        'posts' => $posts[$posts]
 //    ]);
 //});
 
@@ -46,3 +47,5 @@ route::get('/feed', [FeedController::class, 'show']);
 route::get('/dashboard', [DashboardController::class, 'show']);
 
 route::get('/mealGenerator', [mealGeneratorController::class, 'show']);
+
+route::get('/posts/{slug}', [PostsController::class, 'show']);
