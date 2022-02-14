@@ -1,16 +1,16 @@
 <?php
 
+
 namespace App\Http\Controllers;
+
+use App\Models\Post;
 
 class PostsController
 {
- public function show($slug)
-     {
-$post = \DB::table('posts')->where('slug', $slug)->first();
-
-return view('post', [
-    'post' => $post
-]);
-     }
+    public function show($slug)
+    {
+        return view('post', [
+            'post' => Post::where('slug', $slug)->firstOrFail()
+        ]);
+    }
 }
-
