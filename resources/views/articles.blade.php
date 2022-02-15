@@ -3,7 +3,6 @@
 
 <head>
     <title>feed</title>
-
     <link rel="stylesheet" href="/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +10,9 @@
 </head>
 
 <body id=body>
-<navbar id="navbar">
-    <a class="navbarbutton" href="/">Home</a>
-    <a class="navbarbutton" href="/profile">My profile</a>
-    <a class="navbarbutton" href="/dashboard">Dashboard</a>
-    <a class="navbarbutton" id="currentpage" href="#">Feed</a>
-    <a class="navbarbutton" href="/FAQ">FAQ</a>
-    <a id="name">welcome to Tijn's blog!</a>
-</navbar>
+
+@extends ('layout')
+@section('content')
 
 <main>
     <div class="blogpost">
@@ -28,42 +22,46 @@
         </h1>
 
 
-        <p1>09/09/2021 14:12</p1>
-        <h2>My study choice</h2>
-        <p>There is of course a reason why I went for HBO-ICT out of all available options, read more about my choice <a
-                href="/posts/mystudychoice">here</a>.</p>
+@foreach ($articles as $article)
+
+        <p1>{{$article->created_at}}</p1>
+        <h2>{{$article->title}}</h2>
+        <p>{{$article->excerpt}}<a
+                href="/articles/{{$article->id}}">link</a>.</p>
     </div>
     <div class="blogpost"><br>
 
-        <p1>09/09/2021 14:29</p1>
-        <h2>SWOT-analysis</h2>
-        <p>I've created a SWOT-analysis about myself, click <a href="blogposts\blogpost-swot.html">here</a> to view it.
-        </p>
-    </div>
-    <br>
+    @endforeach
 
-    <div class="blogpost">
-        <p1>09/09/2021 14:34</p1>
-        <h2>Programming experience</h2>
-        <p>I didn't dive into this course cluelessly, a brief explanation about my past programming endeavours can be
-            found <a href="">here</a></p>
-    </div>
-    <br>
+{{--        <p1>09/09/2021 14:29</p1>--}}
+{{--        <h2>SWOT-analysis</h2>--}}
+{{--        <p>I've created a SWOT-analysis about myself, click <a href="blogposts\blogpost-swot.html">here</a> to view it.--}}
+{{--        </p>--}}
+{{--    </div>--}}
+{{--    <br>--}}
 
-    <div class="blogpost">
-        <p1>09/09/2021 14:44</p1>
-        <h2>My feedback</h2>
-        <p>To read about the feedback i've received about my SKC assignment, visit <a
-                href="blogposts\blogpost-feedback.html">here</a>.</p>
-    </div>
-    <br>
+{{--    <div class="blogpost">--}}
+{{--        <p1>09/09/2021 14:34</p1>--}}
+{{--        <h2>Programming experience</h2>--}}
+{{--        <p>I didn't dive into this course cluelessly, a brief explanation about my past programming endeavours can be--}}
+{{--            found <a href="">here</a></p>--}}
+{{--    </div>--}}
+{{--    <br>--}}
 
-    <div class="blogpost">
-        <p1>09/09/2021 14:49</p1>
-        <h2>The ICT field of work</h2>
-        <p>There is a lot of potential work in the ICT field, more information about this can be found <a
-                href="blogposts\blogpost-workfield.html">here</a>.</p>
-    </div>
+{{--    <div class="blogpost">--}}
+{{--        <p1>09/09/2021 14:44</p1>--}}
+{{--        <h2>My feedback</h2>--}}
+{{--        <p>To read about the feedback i've received about my SKC assignment, visit <a--}}
+{{--                href="blogposts\blogpost-feedback.html">here</a>.</p>--}}
+{{--    </div>--}}
+{{--    <br>--}}
+
+{{--    <div class="blogpost">--}}
+{{--        <p1>09/09/2021 14:49</p1>--}}
+{{--        <h2>The ICT field of work</h2>--}}
+{{--        <p>There is a lot of potential work in the ICT field, more information about this can be found <a--}}
+{{--                href="blogposts\blogpost-workfield.html">here</a>.</p>--}}
+{{--    </div>--}}
 
 
 </main>
@@ -91,3 +89,5 @@
     </div>
 </footer>
 </body>
+
+@endsection

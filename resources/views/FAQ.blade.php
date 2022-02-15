@@ -10,14 +10,9 @@
 </head>
 
 <body id=body>
-<navbar id="navbar">
-    <a class="navbarbutton" href="/">Home</a>
-    <a class="navbarbutton" href="/profile">My profile</a>
-    <a class="navbarbutton" href="/dashboard">Dashboard</a>
-    <a class="navbarbutton" href="/feed">Feed</a>
-    <a class="navbarbutton" id="currentpage" href="#">FAQ</a>
-    <a id="name">welcome to Tijn's blog!</a>
-</navbar>
+
+@extends ('layout')
+@section('content')
 
 <main>
     <h1>
@@ -27,8 +22,9 @@
     <hr>
 
     <ul>
-        @foreach($faq as $post)
-            <li>{{ $post->answer }}</li>
+        @foreach($faq as $question)
+         <h4>  {!! $question->question !!}</h4>
+            <li>{!! $question->answer !!}</li>
         @endforeach
     </ul>
 
@@ -57,3 +53,4 @@
     </div>
 </footer>
 </body>
+@endsection

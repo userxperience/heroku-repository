@@ -1,3 +1,5 @@
+@extends ('layout')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,14 +14,6 @@
     <meta name="keywords" content="HZ, Student, Portfolio">
 </head>
 
-<navbar id="navbar">
-    <a class="navbarbutton" id="currentpage" href="#">Home</a>
-    <a class="navbarbutton" href="/profile">My profile</a>
-    <a class="navbarbutton" href="/dashboard">Dashboard</a>
-    <a class="navbarbutton" href="/feed">Feed</a>
-    <a class="navbarbutton" href="/FAQ">FAQ</a>
-    <a id="name">welcome to Tijn's page!</a>
-</navbar>
 
 <header>
     <img src="/img/pasfotogrijs.png" alt="my photo" id="pasfoto">
@@ -27,6 +21,9 @@
     <a href="/mealGenerator"><img src="/img/voercode.png" alt="javascript code" id="voercode"></a>
     <img src="/img/weercode.png" alt="javascript code" id="weercode">
 </header>
+
+
+
 
 <body class=body>
 
@@ -82,10 +79,7 @@
     <br><br><br><br><br><br><br><br><br><br>
 </main>
 
-<?php
-require 'elements/footer.php'
-?>
-
 </body>
 
 </html>
+@endsection

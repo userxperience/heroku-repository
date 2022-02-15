@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArticlesController;
 use App\Http\Controllers\dashboardController;
 use App\Http\Controllers\FAQController;
 use App\Http\Controllers\FeedController;
@@ -42,7 +43,9 @@ route::get ('/profile', [ProfileController::class, 'show']);
 
 route::get('/FAQ', [FAQController::class, 'show']);
 
-route::get('/feed', [FeedController::class, 'show']);
+route::get('/articles/{article}', [ArticlesController::class, 'show']);
+
+route::get('/articles', [FeedController::class, 'show']);
 
 route::get('/dashboard', [DashboardController::class, 'show']);
 

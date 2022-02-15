@@ -1,3 +1,15 @@
+<navbar id="navbar">
+    <a class="navbarbutton" id="{{ Request::path() === '/' ? 'currentpage' : '' }}"  href="/">Home</a>
+    <a class="navbarbutton" id="{{ Request::path() === 'profile' ? 'currentpage' : '' }}" href="profile">My profile</a>
+    <a class="navbarbutton" id="{{ Request::path() === 'dashboard' ? 'currentpage' : '' }}" href="dashboard">Dashboard</a>
+    <a class="navbarbutton" id="{{ Request::path() === 'articles' ? 'currentpage' : '' }}" href="articles">Feed</a>
+    <a class="navbarbutton" id="{{ Request::path() === 'FAQ' ? 'currentpage' : '' }}" href="FAQ">FAQ</a>
+    <a id="name">welcome to Tijn's profile!</a>
+</navbar>
+
+
+@yield('content')
+
 <footer id="footer" class="grid-container">
     <div id="allcontactinfo">
         <a id="contactinfo"><a target="_blank"
@@ -18,5 +30,6 @@
             <br> <a target="_blank" href="https://github.com/HZ-HBO-ICT" id="footerlink">ICT github page
             </a>
         </a>
+
     </div>
 </footer>

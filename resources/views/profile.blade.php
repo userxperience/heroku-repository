@@ -11,14 +11,10 @@
 </head>
 
 <body id=body>
-<navbar id="navbar">
-    <a class="navbarbutton" href="/">Home</a>
-    <a class="navbarbutton" id="currentpage" href="#">My profile</a>
-    <a class="navbarbutton" href="/dashboard">Dashboard</a>
-    <a class="navbarbutton" href="/feed">Feed</a>
-    <a class="navbarbutton" href="/FAQ">FAQ</a>
-    <a id="name">welcome to Tijn's profile!</a>
-</navbar>
+
+
+@extends ('layout')
+@section('content')
 
 <main>
     <h1>
@@ -78,3 +74,4 @@
 </footer>
 
 </body>
+@endsection
