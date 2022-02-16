@@ -15,5 +15,6 @@ class DatabaseSeeder extends Seeder
     {
          \App\Models\post::factory(100)->create();
          (new FAQSeeder)->run();
+        (new GradeSeeder)->run();
     }
 }

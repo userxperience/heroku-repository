@@ -24,8 +24,8 @@ class PostFactory extends Factory
     public function definition()
     {
         return [
-            'title' => $this->faker->realText($maxNbChars = 50, $indexSize = 1),
-            'excerpt' => $this->faker->realText($maxNbChars = 200, $indexSize = 2),
+            'title' => $this->faker->Text($maxNbChars = 50, $indexSize = 1),
+            'excerpt' => $this->faker->Text($maxNbChars = 200, $indexSize = 2),
             'body' => $this->faker->randomHtml(4, 4),
         ];
     }

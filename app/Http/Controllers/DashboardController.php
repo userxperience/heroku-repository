@@ -1,9 +1,19 @@
 <?php
 
 namespace App\Http\Controllers;
-class dashboardController
+
+use App\Models\Grade;
+
+class DashboardController
 {
     public function show() {
-        return view('dashboard');
+
+        $grades = Grade::all();
+
+
+        return view('dashboard', [
+            'grades'=>$grades
+        ]);
+
     }
 }

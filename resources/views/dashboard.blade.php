@@ -22,6 +22,11 @@
         <hr>
     </h1>
     <table>
+
+        @foreach($grades as $grade)
+
+        @endforeach
+
         <!--quartile 1 below-->
         <tr>
             <th>quartile</th>
@@ -37,7 +42,7 @@
             </td>
             <td>2,5</td>
             <td>Assessment</td>
-            <td></td>
+            <td>{{$grades[0]->best_grade}}</td>
             <!--grade here-->
 
         </tr>
@@ -45,7 +50,7 @@
             <td>Computer Science Basics</td>
             <td>5</td>
             <td>Written exam</td>
-            <td></td>
+            <td>{{$grades[2]->best_grade}}</td>
             <!--grade here-->
 
         </tr>
@@ -53,7 +58,7 @@
             <td>Programming Basics</td>
             <td>5</td>
             <td>Case study</td>
-            <td></td>
+            <td>{{$grades[1]->best_grade}}</td>
             <!--grade here-->
         </tr>
 
@@ -63,13 +68,13 @@
             <td rowspan="2">Object Oriented Programming</td>
             <td>5</td>
             <td>case study</td>
-            <td></td>
+            <td>{{$grades[3]->best_grade}}</td>
             <!--grade here-->
         </tr>
         <tr>
             <td>5</td>
             <td>Project</td>
-            <td></td>
+            <td>{{$grades[4]->best_grade}}</td>
             <!--grade here-->
         </tr>
 

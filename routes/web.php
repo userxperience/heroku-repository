@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\ArticlesController;
-use App\Http\Controllers\dashboardController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\FAQController;
 use App\Http\Controllers\FeedController;
 use App\Http\Controllers\ProfileController;
