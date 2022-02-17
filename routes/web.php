@@ -45,8 +45,8 @@ route::get('/FAQ/create', [FAQController::class, 'create']);
 route::post('/FAQ', [FAQController::class, 'store']);
 route::get('/FAQ', [FAQController::class, 'index']);
 route::get('/FAQ/{question}', [FAQController::class, 'show']);
-route::get('/FAQ{question}/edit', [FAQController::class, 'edit']);
-route::put('/FAQ{question}', [FAQController::class, 'update']);
+route::get('/FAQ/{question}/edit', [FAQController::class, 'edit']);
+route::put('/FAQ/{question}', [FAQController::class, 'update']);
 route::delete('/FAQ/{question}', [FAQController::class, 'destroy']);
 
 route::get('/articles/create', [ArticlesController::class, 'create']);
@@ -63,8 +63,8 @@ route::delete('/articles/{article}', [ArticlesController::class, 'destroy']);
 route::get('/articles/{article}', [ArticlesController::class, 'show']);
 
 
-route::get('/articles', [FeedController::class, 'show']);
-route::get('/articles', [FeedController::class, 'index']);
+route::get('/articles', [ArticlesController::class, 'show']);
+route::get('/articles', [ArticlesController::class, 'index']);
 
 route::get('/dashboard', [DashboardController::class, 'show']);
 

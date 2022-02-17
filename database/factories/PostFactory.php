@@ -25,8 +25,8 @@ class PostFactory extends Factory
     {
         return [
             'title' => $this->faker->Text($maxNbChars = 50, $indexSize = 1),
-            'excerpt' => $this->faker->Text($maxNbChars = 200, $indexSize = 2),
-            'body' => $this->faker->randomHtml(4, 4),
+            'excerpt' => $this->faker->Text($maxNbChars = 100, $indexSize = 2),
+            'body' => $this->faker->Text($maxNbChars = 200, $indexSize = 2),
         ];
     }
 }
