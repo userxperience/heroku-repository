@@ -21,6 +21,7 @@
     <p>
     <hr>
 
+
     <ul>
         @foreach($faq as $question)
          <h4>  {!! $question->question !!}</h4>
