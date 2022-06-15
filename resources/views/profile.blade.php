@@ -16,7 +16,7 @@
 @extends ('layout')
 @section('content')
 <br><br><br>
-    you are not logged in right now, log in <a href="login">here</a> to see the profile page!
+    you are not logged in right now, log in <a href="login">here</a> to see the profile page!!
 <br><br><br>
 </body>
 @endsection
