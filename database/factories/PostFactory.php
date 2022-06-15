@@ -3,7 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Article;
-use App\Models\post;
+use App\Models\Post;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
