@@ -2,188 +2,76 @@
 <html lang="en">
 
 <head>
-    <title>dashboard</title>
-    <script type="text/javascript" src="program.js"></script>
+    <title>my profile</title>
+
     <link rel="stylesheet" href="/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 
-
 <body id=body>
+
 
 @extends ('layout')
 @section('content')
 
-<main>
-    <h1>
-        my study progress
-        <hr>
-    </h1>
-    <table>
+    <main>
+        <h1>
+            About me
+            <hr>
+        </h1>
+        <p>
+            My name is Tijn Visser and i'm a first year ICT student at the HZ.<br>
+            I am from Terneuzen, on the other side. i'm seventeen and I graduated from HAVO last year.<br>
+            In terms of hobbies, i'm learning piano, I like to play video games and I like to hang out with friends. i've
+            also
+            begun to take an interest in coding since I have started this course.<br>
+            My favorite genres of games are strategy games like RTS's or tactical shooters. <br>
+            I also work at the local cinema in Terneuzen, it's a comfortable working environment and it's also nice ensuring
+            people have a good time.<br>
+            <br>My favorite games at the moment are:
+        <ul>
+            <li>Rainbow Six Siege</li>
+            <li>Factorio</li>
+            <li>Magic:the gathering</li>
+            <li>Forza</li>
+            <li>Minecraft</li>
+        </ul>
 
-        @foreach($grades as $grade)
+        <br>
+        At home we have a siberian husky named Ravi, a cat named Snoepie and another cat that doesn't really have a name. Of
+        course I wouldn't forget about the real MVP, our aquariumfish.<br><br>
+        <img src="/img/snoepie.jpeg" alt="snoepie" id="snoepiefoto">
 
-        @endforeach
+        <img src="/img/ravi.jpeg" alt="ravi" id="ravifoto">
+        </p>
+        <br><br><br><br><br><br>
+    </main>
 
-        <!--quartile 1 below-->
-        <tr>
-            <th>quartile</th>
-            <th>course</th>
-            <th>EC</th>
-            <th>exam</th>
-            <th>grade</th>
-        </tr>
-        <tr>
-            <td rowspan="3">1</td>
-            <td>Programme and Career
-                Orientation
-            </td>
-            <td>2,5</td>
-            <td>Assessment</td>
-            <td>{{$grades[0]->best_grade}}</td>
-            <!--grade here-->
-
-        </tr>
-        <tr>
-            <td>Computer Science Basics</td>
-            <td>5</td>
-            <td>Written exam</td>
-            <td>{{$grades[2]->best_grade}}</td>
-            <!--grade here-->
-
-        </tr>
-        <tr>
-            <td>Programming Basics</td>
-            <td>5</td>
-            <td>Case study</td>
-            <td>{{$grades[1]->best_grade}}</td>
-            <!--grade here-->
-        </tr>
-
-        <!--quartile 2 below-->
-        <tr>
-            <td rowspan="2">2</td>
-            <td rowspan="2">Object Oriented Programming</td>
-            <td>5</td>
-            <td>case study</td>
-            <td>{{$grades[3]->best_grade}}</td>
-            <!--grade here-->
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>Project</td>
-            <td>{{$grades[4]->best_grade}}</td>
-            <!--grade here-->
-        </tr>
-
-        <!--quartile 3 below-->
-        <tr>
-            <td rowspan="4">3</td>
-            <td>Framework Development I</td>
-            <td>5</td>
-            <td>Case study</td>
-            <td></td>
-            <!--grade here-->
-        </tr>
-
-        <tr>
-            <td rowspan="3">Framework Project I</td>
-            <td>2,5</td>
-            <td>Project</td>
-            <td></td>
-            <!--grade here-->
-
-        <tr>
-            <td>2,5</td>
-            <td>Assessment</td>
-            <td></td>
-            <!--grade here-->
-        </tr>
-        <tr>
-            <td>2,5</td>
-            <td>Report</td>
-            <td></td>
-            <!--grade here-->
-        </tr>
-        </tr>
-
-        <!--quartile 4 below-->
-        <tr>
-            <td rowspan="3">4</td>
-            <td rowspan="3">Framework project II</td>
-            <td> 3.33*</td>
-            <td>Portfolio</td>
-            <td></td>
-            <!--grade here-->
-        </tr>
-        <tr>
-            <td>3.33*</td>
-            <td>Project</td>
-            <td></td>
-            <!--grade here-->
-        </tr>
-        <tr>
-            <td>3.33*</td>
-            <td>Assessment</td>
-            <td></td>
-        <tr></tr>
-        <!--grade here-->
-        </tr>
-        <tr>
-            <td>Entire year</td>
-            <td>Personal Professional Development</td>
-            <td>12,5</td>
-            <!--grade here-->
-            <td>Portfolio</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td rowspan="2">Project week</td>
-            <td>ICT Personality I</td>
-            <td>2,5</td>
-            <td>Portfolio</td>
-            <td></td>
-            <!--grade here-->
-        </tr>
-        <tr>
-            <td>ICT Personality II</td>
-            <td>2,5</td>
-            <td>Portfolio</td>
-            <td></td>
-            <!--grade here-->
-        </tr>
-    </table>
-    <p id="tablenote">*note: EC values are subject to change</p>
-    <br>
-    <label>Study progress:</label>
-    <progress id="progressbar" value="5" max="62.5"></progress>
-    <p><br>A minimum of 45 EC's is required to pass.</p>
-    <br>
-    <br>
-</main>
-<footer id="footer" class="grid-container">
-    <div id="allcontactinfo">
-        <a id="contactinfo"><a target="_blank"
-                               href="https://teams.microsoft.com/l/channel/19%3aca826369e55e492aa1efd2016b2fcbbe%40thread.skype/International?groupId=95bddebc-a340-4d88-81fc-b80e0bfc70c3&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c"
-                               id="footerlink">the HZ teams group</a><br>
-            <a target="_blank" href="https://apps.hz.nl/angular/studievoortgang/studiestatus" id="footerlink">
-                study progress </a> <br> <a id="footerlink" target="_blank" href="https://learn.hz.nl">our learn
-                environment</a>
-    </div>
-    <div id="tweedecontactinfo">
-        <a id="contactinfo"><a target="_blank"
-                               href="https://hz.nl/uploads/documents/Regelingen/OERS/2021-2022/HZ-Course-and-Examination-Regulations-2021-2022.pdf"
-                               id="footerlink">examination regulations</a>
-            <br>
-            <a target="_blank"
-               href="https://hz.nl/uploads/documents/Regelingen/OERS/2019-2020/2020-2021-ICT-Implementation-Regulations-CER-HZ-DEF1.0.pdf"
-               id="footerlink">implementation regulations</a>
-            <br> <a target="_blank" href="https://github.com/HZ-HBO-ICT" id="footerlink">ICT github page
+    <footer id="footer" class="grid-container">
+        <div id="allcontactinfo">
+            <a id="contactinfo"><a target="_blank"
+                                   href="https://teams.microsoft.com/l/channel/19%3aca826369e55e492aa1efd2016b2fcbbe%40thread.skype/International?groupId=95bddebc-a340-4d88-81fc-b80e0bfc70c3&tenantId=4c16deb3-342d-4fca-bcd5-b1429308034c"
+                                   id="footerlink">the HZ teams group</a><br>
+                <a target="_blank" href="https://apps.hz.nl/angular/studievoortgang/studiestatus" id="footerlink">
+                    study progress </a> <br> <a id="footerlink" target="_blank" href="https://learn.hz.nl">our learn
+                    environment</a>
+        </div>
+        <div id="tweedecontactinfo">
+            <a id="contactinfo"><a target="_blank"
+                                   href="https://hz.nl/uploads/documents/Regelingen/OERS/2021-2022/HZ-Course-and-Examination-Regulations-2021-2022.pdf"
+                                   id="footerlink">examination regulations</a>
+                <br>
+                <a target="_blank"
+                   href="https://hz.nl/uploads/documents/Regelingen/OERS/2019-2020/2020-2021-ICT-Implementation-Regulations-CER-HZ-DEF1.0.pdf"
+                   id="footerlink">implementation regulations</a>
+                <br> <a target="_blank" href="https://github.com/HZ-HBO-ICT" id="footerlink">ICT github page
+                </a>
             </a>
-        </a>
-    </div>
-</footer>
+
+        </div>
+    </footer>
+
 </body>
 @endsection

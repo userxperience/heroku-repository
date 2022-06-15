@@ -1,7 +1,7 @@
 <navbar id="navbar">
     <a class="navbarbutton" id="{{ Request::path() === '/' ? 'currentpage' : '' }}"  href="/">Home</a>
     <a class="navbarbutton" id="{{ Request::path() === 'profile' ? 'currentpage' : '' }}" href="profile">My profile</a>
-    <a class="navbarbutton" id="{{ Request::path() === 'dashboard' ? 'currentpage' : '' }}" href="dashboard">Dashboard</a>
+    <a class="navbarbutton" id="{{ Request::path() === 'portfoliodashboard' ? 'currentpage' : '' }}" href="portfoliodashboard">Dashboard</a>
     <a class="navbarbutton" id="{{ Request::path() === 'articles' ? 'currentpage' : '' }}" href="articles">Feed</a>
     <a class="navbarbutton" id="{{ Request::path() === 'FAQ' ? 'currentpage' : '' }}" href="FAQ">FAQ</a>
     <a id="name">welcome to Tijn's profile!</a>
