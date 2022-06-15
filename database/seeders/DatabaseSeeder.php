@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+
+use App\Models\post;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,7 +15,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-         \App\Models\post::factory(100)->create();
+         Post::factory(100)->create();
          (new FAQSeeder)->run();
         (new GradeSeeder)->run();
     }
