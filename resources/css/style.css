@@ -1,0 +1,247 @@
+/* img below*/
+#pasfoto {
+    width:150px;
+    position: absolute;
+    top: 135px;
+    right: 20px;
+}
+
+#hzlogo{
+    width:150px;
+    position: absolute;
+    top: 400px;
+    right: 20px;
+}
+
+#snoepiefoto{
+    width:150px;
+    position: static;
+    top: 0px;
+    left: 200px;
+}
+
+#snoepiefoto:hover     {
+    transform: scale(2.5);
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    z-index: 3;
+    padding-left:50px
+}
+
+#ravifoto{
+    width:150px;
+    position: static;
+    top: 135px;
+    right: 20px;
+}
+
+#ravifoto:hover     {
+    transform: scale(2.5);
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    z-index: 3;
+    padding-right: 0px;
+}
+
+#voercode{
+    width:300px;
+    position: absolute;
+    top: 800px;
+    right: 200px;
+}
+
+#voercode:hover     {
+    transform: scale(2);
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    z-index: 3;
+    padding-right: 0px;
+}
+
+#weercode{
+    width:300px;
+    position: absolute;
+    top: 800px;
+    right: 700px;
+}
+
+#weercode:hover     {
+    transform: scale(2);
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    z-index: 3;
+    padding-right: 0px;
+}
+
+
+/*body below*/
+body {
+    color:black;
+    font-family: Arial;
+    margin: 0px;
+    background-color:#e0e4e4;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+main{
+    margin:10px;
+    padding-top: 0px;
+}
+
+
+/*change padding-top to 30 and position to fixed for a fixed navbar*/
+
+
+/*navbar below*/
+#navbar {
+    background-color: #af3e3e;
+    display: block;
+    bottom: 0;
+    right: 10;
+    left:10;
+    padding-top:16px;
+    width: 100%;
+    height: 30px;
+    position:static;
+    top: 0;
+}
+
+.navbarbutton {
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    margin-left: 5px;
+    background-color: #D4E7E7;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+#name {
+    margin-left:680px;
+    color: rgb(240, 240, 240);
+    padding: 5px;
+    background-color: #468484;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+#navbar a:hover{
+    background-color: #468484;
+    color:white;
+}
+
+#currentpage{
+    background-color:#468484 !important;
+    color:white;
+}
+
+/*footer below*/
+footer{
+    bottom:0px;
+    background-color:#468484;
+    bottom: 0px;
+    right: 0px;
+    left:0px;
+    width: 100%;
+    height: 70px;
+
+}
+
+#contactinfo{
+    color: white;
+    padding-top: 1px ;
+    margin-bottom: 5px;
+}
+
+#allcontactinfo{
+    padding-left: 10px;
+}
+
+#tweedecontactinfo {
+    text-align: left;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-gap: 10px;
+    padding: 0px;
+}
+
+.grid-container > div {
+    text-align: left;
+    padding: 5px 0;
+}
+
+#footerlink:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+#footerlink:visited{
+    color: rgb(207, 207, 207);
+}
+
+#footerlink{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*blog below*/
+.FAQquestion{
+    font-weight:bold;
+}
+
+.blogpost{
+    border-bottom:1px solid black;
+    width: 100%;
+}
+
+#blogtitel{
+    text-align: center;
+}
+
+table, th, td {
+    border:1px solid black;
+}
+
+
+/*dashboard below*/
+#td{
+    border:1px solid black;
+}
+
+#tablenote{
+    margin:0px;
+    color: black;
+}
+
+progress{
+    margin:16px;
+}
+
+progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 250px;
+    height: 15px;
+}
+
+progress[value]::-webkit-progress-value {
+    background-color:#af3e3e
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: #888888;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5) inset;
+}
