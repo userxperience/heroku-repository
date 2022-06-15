@@ -19,8 +19,9 @@
         <h1 id="blogtitel">
             my blog
             <hr>
+            <br>
+            create a new post <a href="articles/create">here</a>
         </h1>
-
 
 @foreach ($articles as $article)
 
