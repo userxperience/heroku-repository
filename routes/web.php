@@ -31,8 +31,6 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 
-Route::get('/', [WelcomeController::class, 'show']);
-
 route::get('/profile', [ProfileController::class, 'show']);
 
 route::get('/FAQ/create', [FAQController::class, 'create']);
