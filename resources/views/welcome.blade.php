@@ -34,7 +34,7 @@
     </h1>
 
     <p>
-        I vaguely remember my first ICT problem being a cartridge on my Gameboy Advanced that didn't work properly. <br> tet <br>
+        I vaguely remember my first ICT problem being a cartridge on my Gameboy Advanced that didn't work properly. <br> test123 <br>
         It was easily fixed by just blowing air into it and inserting it again, and
         while it <br> was a simple solution it still gave me the same satisfaction I feel today when I fix a more
         complicated issue.<br>
