@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-e2 public/
+web: vendor/bin/heroku public/
